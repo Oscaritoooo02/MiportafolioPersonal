@@ -1,0 +1,39 @@
+/*
+  VARIABLES GLOBALES DE DISEÑO
+  Cambia estos valores para personalizar todo el sitio desde un solo lugar.
+*/
+:root {
+  /* --- Colores principales --- */
+  --color-bg: #15100f;              /* Fondo oscuro elegante */
+  --color-bg-alt: #1c1513;          /* Fondo oscuro alterno (secciones) */
+  --color-wine: #6b0f1a;            /* Rojo vino - color principal */
+  --color-wine-light: #9c2b3a;      /* Rojo vino claro - hover / acentos */
+  --color-wine-soft: #a8323f;
+
+  --color-card: #f5efe8;            /* Fondo de tarjetas claras */
+  --color-card-alt: #ffffff;
+
+  --color-text-light: #f2ece5;      /* Texto sobre fondo oscuro */
+  --color-text-muted: #c9bdb6;      /* Texto secundario sobre fondo oscuro */
+  --color-text-dark: #2a201e;       /* Texto sobre fondo claro (tarjetas) */
+  --color-text-dark-muted: #5c4f4b;
+
+  /* --- Tipografía --- */
+  --font-display: 'Playfair Display', serif; /* Títulos */
+  --font-body: 'Poppins', sans-serif;         /* Texto general */
+
+  /* --- Espaciados --- */
+  --spacing-section: 7rem;
+  --spacing-section-mobile: 4rem;
+  --container-width: 1140px;
+
+  /* --- Bordes y sombras --- */
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --shadow-soft: 0 12px 30px rgba(0, 0, 0, 0.35);
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.18);
+
+  /* --- Transiciones --- */
+  --transition-fast: 0.2s ease;
+  --transition-mid: 0.4s ease;
+}

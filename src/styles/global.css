@@ -1,0 +1,122 @@
+@import './variables.css';
+
+/* --- Reset básico --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* Scroll suave entre secciones */
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-light);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* --- Contenedor general reutilizable --- */
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* --- Estructura común de una sección --- */
+.section {
+  padding: var(--spacing-section) 0;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--color-text-muted);
+  max-width: 560px;
+  margin: 0 auto 3.5rem auto;
+  font-weight: 300;
+}
+
+.section-alt {
+  background-color: var(--color-bg-alt);
+}
+
+/* --- Botón reutilizable --- */
+.btn {
+  display: inline-block;
+  padding: 0.9rem 2.2rem;
+  background-color: var(--color-wine);
+  color: var(--color-text-light);
+  border-radius: 50px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  transition: transform var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast);
+  box-shadow: var(--shadow-soft);
+}
+
+.btn:hover {
+  background-color: var(--color-wine-light);
+  transform: translateY(-3px);
+}
+
+/* --- Animación de aparición al hacer scroll --- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respeta la preferencia de "reducir movimiento" del usuario */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--spacing-section-mobile) 0;
+  }
+}

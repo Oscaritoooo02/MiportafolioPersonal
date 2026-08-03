@@ -1,0 +1,122 @@
+.funfacts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.6rem;
+}
+
+.funfact-card {
+    width: 100%;
+    background-color: var(--color-card);
+    color: var(--color-text-dark);
+    border-radius: var(--radius-md);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: var(--shadow-card);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.funfact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-soft);
+}
+
+.funfact-icon {
+    font-size: 2.2rem;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.funfact-title {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+}
+
+.funfact-text {
+    font-size: 0.9rem;
+    color: var(--color-text-dark-muted);
+}
+
+
+/* --- Modal --- */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(10, 6, 6, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    padding: 1.5rem;
+    animation: fadeInOverlay 0.25s ease;
+}
+
+@keyframes fadeInOverlay {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    background-color: var(--color-card);
+    color: var(--color-text-dark);
+    border-radius: var(--radius-lg);
+    max-width: 480px;
+    width: 100%;
+    padding: 2rem;
+    position: relative;
+    box-shadow: var(--shadow-soft);
+    animation: popIn 0.3s ease;
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.92);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-image {
+    width: 100%;
+    border-radius: var(--radius-md);
+    margin-bottom: 1.2rem;
+}
+
+.modal-content h3 {
+    font-family: var(--font-display);
+    margin-bottom: 0.8rem;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: var(--color-text-dark-muted);
+    transition: color var(--transition-fast);
+}
+
+.modal-close:hover {
+    color: var(--color-wine);
+}
+
+@media (max-width: 900px) {
+    .funfacts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .funfacts-grid {
+        grid-template-columns: 1fr;
+    }
+}
