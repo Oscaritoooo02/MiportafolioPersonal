@@ -1,6 +1,5 @@
 @import './variables.css';
 
-/* --- Reset básico --- */
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +7,7 @@
 }
 
 html {
-  scroll-behavior: smooth; /* Scroll suave entre secciones */
+  scroll-behavior: smooth; 
 }
 
 body {
@@ -40,7 +39,6 @@ ul {
   list-style: none;
 }
 
-/* --- Contenedor general reutilizable --- */
 .container {
   width: 100%;
   max-width: var(--container-width);
@@ -48,7 +46,6 @@ ul {
   padding: 0 1.5rem;
 }
 
-/* --- Estructura común de una sección --- */
 .section {
   padding: var(--spacing-section) 0;
 }
@@ -73,7 +70,6 @@ ul {
   background-color: var(--color-bg-alt);
 }
 
-/* --- Botón reutilizable --- */
 .btn {
   display: inline-block;
   padding: 0.9rem 2.2rem;
@@ -103,7 +99,6 @@ ul {
   transform: translateY(0);
 }
 
-/* Respeta la preferencia de "reducir movimiento" del usuario */
 @media (prefers-reduced-motion: reduce) {
   .fade-in {
     transition: none;
