@@ -2,7 +2,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 76px; /* Compensa la navbar fija */
+  padding-top: 70px; 
   background:
     radial-gradient(circle at 85% 15%, rgba(107, 15, 26, 0.35), transparent 55%),
     var(--color-bg);
