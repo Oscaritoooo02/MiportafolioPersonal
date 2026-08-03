@@ -1,4 +1,4 @@
-/* Dos columnas en escritorio, una columna en móvil */
+
 .about-grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
