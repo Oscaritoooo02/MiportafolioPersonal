@@ -29,7 +29,6 @@
   box-shadow: var(--shadow-soft);
 }
 
-/* Detalle decorativo detrás de la foto: el "signature element" del hero */
 .hero-photo-wrapper::before {
   content: '';
   position: absolute;
