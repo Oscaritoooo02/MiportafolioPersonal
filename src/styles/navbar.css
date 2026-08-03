@@ -28,7 +28,6 @@
   color: var(--color-wine-light);
 }
 
-/* Enlaces horizontales en escritorio */
 .navbar-links {
   display: flex;
   gap: 2.2rem;
@@ -61,7 +60,6 @@
   width: 100%;
 }
 
-/* Botón hamburguesa (oculto en escritorio) */
 .navbar-toggle {
   display: none;
   flex-direction: column;
@@ -90,7 +88,6 @@
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* Menú móvil desplegable */
 .navbar-mobile {
   display: none;
   flex-direction: column;
