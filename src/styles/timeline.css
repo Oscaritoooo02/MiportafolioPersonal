@@ -2,8 +2,6 @@
   position: relative;
   padding: 2rem 0;
 }
-
-/* Línea vertical central que conecta las etapas (solo escritorio) */
 .timeline-line {
   position: absolute;
   left: 50%;
@@ -38,7 +36,6 @@
   left: 50%;
 }
 
-/* "Sello" con el año, estilo distintivo del timeline */
 .timeline-year {
   display: inline-block;
   background-color: var(--color-wine);
@@ -81,7 +78,6 @@
   font-size: 0.95rem;
 }
 
-/* Punto sobre la línea central que marca cada etapa */
 .timeline-item::before {
   content: '';
   position: absolute;
