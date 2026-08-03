@@ -4,7 +4,6 @@ import Reveal from './Reveal.jsx'
 import '../styles/gallery.css'
 
 function Gallery() {
-  // Imagen actualmente abierta en el lightbox (null = cerrado)
   const [selectedImage, setSelectedImage] = useState(null)
 
   return (
@@ -32,7 +31,6 @@ function Gallery() {
         </div>
       </div>
 
-      {/* Lightbox: muestra la imagen seleccionada en grande */}
       {selectedImage && (
         <div
           className="modal-overlay"
