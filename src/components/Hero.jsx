@@ -14,7 +14,6 @@ function Hero() {
         </div>
 
         <div className="hero-text">
-          {/* Cambia el nombre, la carrera y la descripción por los tuyos */}
           <p className="hero-greeting">Hola, mi nombre es</p>
           <h1 className="hero-name">Oscar Agurcia</h1>
           <h2 className="hero-career">Estudiante de Ingeniería en Ciencias Computacionales</h2>
