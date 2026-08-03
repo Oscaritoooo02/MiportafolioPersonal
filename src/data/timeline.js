@@ -1,9 +1,4 @@
-// ------------------------------------------------------------------
-// DATOS DE "MI HISTORIA" (Timeline)
-// Edita, agrega o elimina objetos de este arreglo para cambiar las
-// etapas que se muestran en la línea de tiempo.
-// Cada objeto representa una etapa de tu vida.
-// ------------------------------------------------------------------
+
 
 const timeline = [{
         id: 1,
