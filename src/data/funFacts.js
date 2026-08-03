@@ -1,7 +1,3 @@
-// DATOS CURIOSOS
-// Cada objeto es una tarjeta. "icon" acepta cualquier emoji o carácter.
-// "shortText" se muestra en la tarjeta y "longText" se muestra en el modal.
-
 
 const funFacts = [{
         id: 1,
