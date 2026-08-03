@@ -12,7 +12,6 @@ const links = [
 ]
 
 function Navbar() {
-  // Controla si el menú móvil está abierto o cerrado
   const [menuOpen, setMenuOpen] = useState(false)
 
   const closeMenu = () => setMenuOpen(false)
@@ -33,7 +32,6 @@ function Navbar() {
           ))}
         </nav>
 
-        {/* Botón hamburguesa, solo visible en móvil */}
         <button
           className={`navbar-toggle ${menuOpen ? 'is-open' : ''}`}
           onClick={() => setMenuOpen(!menuOpen)}
@@ -45,7 +43,6 @@ function Navbar() {
         </button>
       </div>
 
-      {/* Menú desplegable en móvil */}
       <nav className={`navbar-mobile ${menuOpen ? 'is-open' : ''}`}>
         {links.map((link) => (
           <a key={link.to} href={link.to} onClick={closeMenu}>
