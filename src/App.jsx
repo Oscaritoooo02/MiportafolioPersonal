@@ -4,6 +4,7 @@ import About from './components/About.jsx'
 import Timeline from './components/Timeline.jsx'
 import FunFacts from './components/FunFacts.jsx'
 import Gallery from './components/Gallery.jsx'
+import Projects from './components/Projects.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
 
@@ -11,14 +12,20 @@ function App() {
   return (
     <>
       <Navbar />
+
       <main>
         <Hero />
         <About />
         <Timeline />
         <FunFacts />
         <Gallery />
+
+
+        <Projects />
+
         <Contact />
       </main>
+
       <Footer />
     </>
   )
