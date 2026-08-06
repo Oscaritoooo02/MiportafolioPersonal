@@ -1,5 +1,6 @@
-import Reveal from './Reveal.jsx'
-import '../styles/about.css'
+import Reveal from "./Reveal.jsx";
+import about from "../assets/images/about.jpeg";
+import "../styles/about.css";
 
 function About() {
   return (
@@ -14,9 +15,8 @@ function About() {
 
         <div className="about-grid">
           <Reveal className="about-photo-col">
-          
             <img
-              src="/src/assets/images/about.jpeg"
+              src={about}
               alt="Fotografía personal"
               className="about-photo"
             />
@@ -29,16 +29,17 @@ function About() {
               donde combino mis estudios con proyectos personales que me
               permiten seguir creciendo.
             </p>
+
             <p>
-              Me considero una persona responsable, creativa y con muchas
-              ganas de dejar huella en todo lo que hago. Disfruto trabajar en
-              equipo y siempre busco la manera de mejorar mis habilidades.
+              Me considero una persona responsable, creativa y con muchas ganas
+              de dejar huella en todo lo que hago. Disfruto trabajar en equipo y
+              siempre busco la manera de mejorar mis habilidades.
             </p>
           </Reveal>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default About
+export default About;
