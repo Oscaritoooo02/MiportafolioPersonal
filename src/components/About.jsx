@@ -1,5 +1,5 @@
-import Reveal from "./Reveal.jsx";
-import about from "../assets/images/about.jpeg";
+import aboutImage from "../assets/images/about.jpeg";
+import Reveal from "./Reveal";
 import "../styles/about.css";
 
 function About() {
@@ -16,7 +16,7 @@ function About() {
         <div className="about-grid">
           <Reveal className="about-photo-col">
             <img
-              src={about}
+              src={aboutImage}
               alt="Fotografía personal"
               className="about-photo"
             />
@@ -24,16 +24,11 @@ function About() {
 
           <Reveal className="about-text-col">
             <p>
-              Soy una persona curiosa y disciplinada, apasionada por aprender
-              cosas nuevas cada día. Actualmente estudio en la universidad,
-              donde combino mis estudios con proyectos personales que me
-              permiten seguir creciendo.
+              Soy una persona curiosa y disciplinada...
             </p>
 
             <p>
-              Me considero una persona responsable, creativa y con muchas ganas
-              de dejar huella en todo lo que hago. Disfruto trabajar en equipo y
-              siempre busco la manera de mejorar mis habilidades.
+              Me considero una persona responsable...
             </p>
           </Reveal>
         </div>
