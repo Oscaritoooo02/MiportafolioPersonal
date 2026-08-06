@@ -2,7 +2,7 @@ const projects = [{
         id: 1,
         title: "Sistema de Asignación de Aulas",
         type: "Proyecto Universitario",
-        description: "Sistema web desarrollado para gestionar aulas, docentes, secciones y horarios de una universidad.",
+        description: "Sistema web desarrollado para gestionar aulas, docentes, secciones y horarios de mi universidad.",
 
         technologies: [
             "React",
@@ -48,7 +48,7 @@ const projects = [{
         id: 3,
         title: "Sistema de Gestión de Restaurante",
         type: "Proyecto Académico",
-        description: "Aplicación para administrar pedidos, productos y control de ventas de un restaurante.",
+        description: "Aplicación para administrar pedidos, productos y control de ventas del restaurante.",
 
         technologies: [
             "React",
@@ -70,7 +70,7 @@ const projects = [{
         id: 4,
         title: "Aplicación Android de Catálogo",
         type: "Proyecto Universitario",
-        description: "Aplicación móvil para visualizar un catálogo de productos utilizando Android Studio y Jetpack Compose.",
+        description: "Aplicación móvil para visualizar un catálogo de productos utilizando Android Studio y Jetpack Compose con base de datos conectada a firebase.",
 
         technologies: [
             "Kotlin",
