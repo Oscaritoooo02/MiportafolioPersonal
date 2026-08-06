@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import '../styles/navbar.css'
 
-// Enlaces del menú. Cada "to" corresponde al id de una sección en App.jsx
 const links = [
   { label: 'Inicio', to: '#inicio' },
   { label: 'Sobre mí', to: '#sobre-mi' },
   { label: 'Mi historia', to: '#mi-historia' },
   { label: 'Datos curiosos', to: '#datos-curiosos' },
   { label: 'Galería', to: '#galeria' },
+  { label: 'Proyectos', to: '#proyectos' },
   { label: 'Contacto', to: '#contacto' },
 ]
 
@@ -23,10 +23,13 @@ function Navbar() {
           Mi<span>Espacio</span>
         </a>
 
-        {/* Enlaces para pantallas grandes */}
         <nav className="navbar-links">
           {links.map((link) => (
-            <a key={link.to} href={link.to}>
+            <a
+              key={link.to}
+              href={link.to}
+              onClick={closeMenu}
+            >
               {link.label}
             </a>
           ))}
@@ -45,7 +48,11 @@ function Navbar() {
 
       <nav className={`navbar-mobile ${menuOpen ? 'is-open' : ''}`}>
         {links.map((link) => (
-          <a key={link.to} href={link.to} onClick={closeMenu}>
+          <a
+            key={link.to}
+            href={link.to}
+            onClick={closeMenu}
+          >
             {link.label}
           </a>
         ))}
