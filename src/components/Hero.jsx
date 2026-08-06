@@ -1,6 +1,6 @@
 import "../styles/hero.css";
 import profile from "../assets/images/profile.jpeg";
-
+import profileImage from "../assets/images/profile.jpeg";
 function Hero() {
   return (
     <section id="inicio" className="hero">
