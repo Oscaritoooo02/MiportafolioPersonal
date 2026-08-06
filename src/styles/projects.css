@@ -1,0 +1,113 @@
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.project-card {
+    background: var(--color-card);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.project-header h3 {
+    font-family: var(--font-display);
+    color: var(--color-text-dark);
+    font-size: 1.5rem;
+}
+
+.project-type {
+    background: var(--color-wine);
+    color: white;
+    padding: 0.35rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.project-description {
+    color: var(--color-text-dark-muted);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.project-section {
+    margin-bottom: 1.5rem;
+}
+
+.project-section h4 {
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.project-tag {
+    background: #ece4df;
+    color: var(--color-text-dark);
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+}
+
+.project-section ul {
+    padding-left: 1.2rem;
+}
+
+.project-section li {
+    color: var(--color-text-dark-muted);
+    margin-bottom: 0.5rem;
+}
+
+.project-footer {
+    margin-top: auto;
+    border-top: 1px solid #ddd;
+    padding-top: 1.2rem;
+}
+
+.project-role {
+    display: inline-block;
+    background: var(--color-wine);
+    color: white;
+    padding: 0.55rem 1rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .project-card {
+        padding: 1.5rem;
+    }
+}
